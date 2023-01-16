@@ -32,7 +32,7 @@ header {
 }
 .nav-item li a {
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 .nav-item li a:hover {
   color: #ff900e;
@@ -174,8 +174,8 @@ h4 {
   text-align: center;
 }
 .sponspors-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin: 50px 0;
 }
 .footer {
@@ -194,5 +194,25 @@ h4 {
   }
   .header {
     width: 100%;
+  }
+  .love-container,
+  .feature-container,
+  .feature-item-1,
+  .love-item,
+  .fact-container,
+  .sponspors-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .love-item {
+    margin: 5px;
+  }
+  .love-item img {
+    width: 100%;
+  }
+  .feature-item-1 {
+    margin: 0 auto;
+  }
+  .banner-text {
+    margin: 0;
   }
 }
